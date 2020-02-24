@@ -16,6 +16,10 @@ const schema = new mongoose.Schema({
   passwordHash: {
     type: String
   },
+  campus: {
+    type: String,
+    enum: ['Amsterdam', 'Lisbon', 'Madrid', 'Miami']
+  },
   githubToken: {
     type: String
   }
